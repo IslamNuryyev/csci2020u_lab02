@@ -1,3 +1,20 @@
-apply plugin : 'application'
+plugins {
+    id 'application'
+}
 
-mainClassName = 'csci2020u.lab02.SimpleTest'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // was told to add this by TA
+    implementation 'org.apache.commons:commons-csv:1.9.0'   
+}
+
+application {
+    mainClass = 'csci2020u.lab02.SimpleTest'
+}
+
+// apply plugin : 'application'
+
+// mainClassName = 'csci2020u.lab02.SimpleTest'

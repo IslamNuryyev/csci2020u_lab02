@@ -15,7 +15,7 @@ CSVFormat.DEFAULT.withHeader("First Name", "Last Name", "SID",
         String firstName = record.get("First Name");  
         String grade = record.get("Grade");  
        System.out.println(firstName + " " + lastName + " (" + 
-grade + ")");  
+grade + ")"); 
       }  
     } catch (IOException e) {  
       e.printStackTrace();  
